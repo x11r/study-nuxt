@@ -25,7 +25,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '@/plugins/vue-audio-visual', ssr: false, mode: 'client' }
+    { src: '@/plugins/vue-audio-visual', ssr: false, mode: 'client' },
+    { src: '@/plugins/rakuten-area', ssr: false, mode: 'client'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -37,6 +38,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    'bootstrap-vue/nuxt',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
